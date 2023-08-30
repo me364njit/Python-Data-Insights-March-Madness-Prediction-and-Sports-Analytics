@@ -1,45 +1,49 @@
-# [Final Reprot](https://github.com/singhrajvinder/CS_482_Project/blob/main/CS482%20Final%20Report.md)
-# [Colab File](https://colab.research.google.com/drive/1t2DyR4lmrAAhQYaHFrOnUApvVARC2f3H?usp=sharing)
-# [CS482 Project Proposal](https://www.kaggle.com/competitions/mens-march-mania-2022/overview/description)
+**Project in the Spotlight: March Madness Prediction and Sports Analytics with Python**
+
 Submitted by: Muhab Elgamal, Christian Saliski, Rajvinder Singh
 
-1. What is the problem that you will be investigating? Why is it interesting?
+Imagine a world where predicting the thrilling twists and turns of the NCAA March Madness basketball tournament is no longer a guessing game. Enter our captivating project, a blend of data science and sports passion. With a focus on the March Machine Learning 2022 Kaggle competition, our team aims to revolutionize the way we anticipate tournament outcomes.
 
-  -  Our group has chosen to work on March Machine Learning 2022. This is a Kaggle competition in which we focus on predicting likely winners for each possible matchup at each round of the tournament. This has piqued our interest because billions of people participate in making their own brackets for likely winners each and make bets on who would win the basketball tournament. Solving this problem will greatly help us choose a more suitable bracket instead of making guesses and using our intuition.
+**1. **Diving into the Challenge**
 
-2. What reading will you examine to provide context and background?
-  
-  -  With dealing with sports, there is a ton of data you can find online about players, and team stats. With betting, you can clearly find an underdog of a game. But in order to predict 2022 game probabilities we need to look at season games and previous year data. For example, If a team is found to be the number 1 seed and has a 95% chance to make it to round 2, it is clear that they will most likely make it to round 2 which increases the probability of a certain game happening.
- 
-3. What data will you use? If you are collecting new data, how will you do it?
+March Machine Learning 2022 presents an intriguing problem: predicting the winners of each potential matchup in the tournament. As basketball enthusiasts, this challenge resonates with us. We are driven by the billions of fans who partake in bracket predictions and wagers, and the opportunity to bring a touch of data-driven certainty to their decisions is undeniably captivating.
 
-  -  Data provided by Kaggle and taking the average of wins per team spreads. Comparing values given in the data set to each team.Regular season and tournament  data from past years for teams are given and can be used for new data. All data for each team has been given to us with each team's scores and wins.
+**2. **Contextualizing the Adventure**
 
-4. What method or algorithm are you proposing? If there are existing implementations, will you use them and how? How do you plan to improve or modify such implementations? You don’t have to have an exact answer at this point, but you should have a general sense of how you will approach the problem you are working on.
+In the world of sports, the data reservoirs run deep. From player stats to team performance, we're delving into the intricacies of basketball data. Our goal is to leverage the wealth of information available, analyzing season games and historical data to craft meaningful predictions. We're intrigued by the puzzle of deciphering the significance of each data point, like uncovering the secrets behind a thrilling game.
 
-  -  There are implementations of this from previous years, however this year has more data compared to the previous years. We will use the previous year's code as a reference. We will have to train a model on previous years and performance during the season. Then with that model, predict a winner at each point in the bracket. So this would look similar to the random forest that we created during the midterm. I have noticed that most implementations use numpy. We will replace numpy with Jax numpy to speed up calculations. 
+**3. **Datasets: Our Playground**
 
-5. How will you evaluate your results? Qualitatively, what kind of results do you expect (e.g. plots or figures)? Quantitatively, what kind of analysis will you use to evaluate and/or compare your results (e.g. what performance metrics or statistical tests)?
+Our playground is the dataset provided by Kaggle, enriched with our statistical insights. By merging historical performance data from various seasons, we construct a comprehensive training set. Our project showcases the potential of this treasure trove of information, demonstrating how it can fuel predictive analytics and redefine the game.
 
-  -  We expect to have probabilities for each seed and compare the two teams by their predicted probability and pick a winner for that game. The results will be compared to winners in real life and see if we predicted the correct winner.
+**4. **Unveiling the Solution Strategy**
 
-# Setup/Documentation 
+While our approach draws inspiration from previous implementations, the sheer volume of data from this year's competition demanded innovation. We're adapting, refashioning, and creating models that learn from the past to predict the future. We're intrigued by the interplay between machine learning algorithms and basketball dynamics, a fusion that promises to change the way we experience the sport.
 
-## Start 
+**5. **Shaping Success Metrics**
 
-We start this project off by first downloading the dataset provided. here: https://www.kaggle.com/competitions/mens-march-mania-2022/overview/description
+The beauty of our project lies in its ability to generate game-changing insights. We're on a journey to produce a probabilistic framework for predicting game outcomes. The thrill of seeing our predictions align with real-life winners will be the ultimate validation of our work. By creating a quantitative foundation for decision-making, we're turning an intuitive art into a science.
 
-## Choose Data
+**Embarking on the Journey**
 
-After downlaoding the Data choose the specific data that will be use to train our model. In our cause we use data from stage 2
-1. Go through the data files   
-2. combine data into one file that you want to use for training 
-3. choose the amount of time to train the model  
-4. run the model and dont let the notbook close or termanate the cell or you will have to restart
+Our project isn't just about coding and numbers—it's about unraveling the patterns and intricacies of basketball tournaments. It's a journey through data, strategy, and the excitement of discovery. Join us as we explore the uncharted territories of March Madness prediction and sports analytics with Python.
 
-## Implementing Jax and getting the top 5 teams 
+# **Project Highlights**
 
-We Implemented MSE USing Jax in the model to increase the accuracy. 
-1. Implement Jax API MSE into model  
-2. We will now get the average of all the teams predictions 
-3. Now we sort the average in decending order and get the top 5 
+## **Setting the Stage**
+
+1. **Data Exploration**: We kick-started by downloading the dataset, laying the foundation for our data-driven journey. [Link to the dataset](https://www.kaggle.com/competitions/mens-march-mania-2022/overview/description)
+
+## **The Data Odyssey**
+
+1. **Data Selection**: We sifted through the dataset, cherry-picking the data we needed. By combining relevant data into a focused training set, we set the stage for our predictive journey.
+
+2. **Training Time**: Determining the optimal training time for our model was crucial. We embarked on experiments to pinpoint the perfect balance between training duration and accuracy, ensuring our predictions were on point.
+
+## **The Jax Advantage**
+
+1. **Jax Implementation**: Seeking accuracy, we seamlessly integrated Jax's powerful MSE (Mean Squared Error) API into our model, harnessing the enhanced precision it brings to the table.
+
+2. **Top 5 Teams**: Our quest for excellence led us to compute and sort the average predictions for each team. We unveiled the top 5 contenders, showcasing the best of our predictive prowess.
+
+With each step, we're transforming the art of predicting March Madness outcomes into a scientific marvel. Our journey is a testament to the fusion of sports passion and data expertise, underscoring the potential of predictive analytics in the world of sports. Join us as we redefine the way we engage with basketball tournaments through the lens of data science.
